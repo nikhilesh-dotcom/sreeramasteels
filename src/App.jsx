@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function App() {
   const [activePage, setActivePage] = useState('home-page');
@@ -130,6 +131,7 @@ export default function App() {
 
   return (
     <>
+      <SpeedInsights />
       {/* GLOBAL HEADER */}
       <header id="main-header">
         <div className="nav-container">
