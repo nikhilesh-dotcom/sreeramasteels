@@ -133,7 +133,21 @@ export default function App() {
       {/* GLOBAL HEADER */}
       <header id="main-header">
         <div className="nav-container">
-          <div className="logo" onClick={() => navigateToPage('home-page')}>
+        <div
+            className="logo"
+            onClick={() => navigateToPage('home-page')}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              cursor: 'pointer',
+            }}
+          >
+            <img
+              src="https://www.image2url.com/r2/default/images/1782634370801-4b9e6b68-a4c2-4a7f-8436-4cb4b0333b4c.png"
+              alt="Sree Rama Steels Logo"
+              style={{ height: '40px', width: 'auto' }}
+            />
             SREE RAMA STEELS<span></span>
           </div>
           <nav className="desktop-nav">
